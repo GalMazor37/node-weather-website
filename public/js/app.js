@@ -7,7 +7,7 @@ const messageOne = document.querySelector('#message-1')
 const messageTwo = document.querySelector('#message-2')
 
 const fetchFunc = (addressCity) => {
-    const myURL = 'http://localhost:3000/weather?address=' + addressCity
+    const myURL = '/weather?address=' + addressCity
     fetch(myURL).then((response) => {
         response.json().then((data) => {
             if(data.error) {
